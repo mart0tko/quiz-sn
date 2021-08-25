@@ -7,5 +7,3 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
-// For imports like below
-// import Button from 'components/Button';

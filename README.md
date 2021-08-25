@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm insall`
+
+This should be the first ran before going to the other scripts.
 ### `npm start`
 
 Runs the app in the development mode.\
