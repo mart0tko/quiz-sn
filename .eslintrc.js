@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "no-extra-semi":"error"
+    "no-extra-semi":"error",
+    "no-debugger": 1
   }
 };
