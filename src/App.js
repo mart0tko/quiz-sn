@@ -1,18 +1,30 @@
 import React from "react";
 import "./App.scss";
-import Header from "components/header/Header";
-import { ThemeProvider, Button } from "@ui5/webcomponents-react";
-import '@ui5/webcomponents/dist/Assets';
-// import '@ui5/webcomponents-fiori/dist/Assets'; // only if you are using the ShellBar, Product Switch or the Upload Collection
+import { Header, ThreeColumnLayout } from "components";
+import { ThemeProvider } from "@ui5/webcomponents-react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "home/Home";
+import Quiz from "quiz/Quiz";
 
 function App() {
   return (
-    <div className="App">
-      <ThemeProvider withToastContainer>
+    <ThemeProvider withToastContainer>
+      <Router>
         <Header />
-        <Button>Test</Button>
-      </ThemeProvider>
-    </div>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/quiz">
+            <Quiz />
+          </Route>
+          <Route path="/">
+            <ThreeColumnLayout center={<Home />}>
+
+            </ThreeColumnLayout>
+          </Route>
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 

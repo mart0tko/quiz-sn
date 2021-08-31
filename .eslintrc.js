@@ -14,6 +14,7 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "no-extra-semi":"error",
-    "no-debugger": 1
+    "no-debugger": 1,
+    "react/prop-types": "off"
   }
 };

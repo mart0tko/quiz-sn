@@ -2,17 +2,25 @@ import React from "react";
 import "@ui5/webcomponents-icons/dist/AllIcons.js";
 import { Button, Bar, Label } from "@ui5/webcomponents-react";
 import "./Header.scss";
+import { APP_TITLE } from "../../constants";
+import { useHistory } from "react-router-dom";
 
 export default function App() {
+  let history = useHistory();
+
+  const handleClick = () => {
+    history.push("/");
+  };
+
   return (
     <Bar className="sn-header" design="Subheader">
-      <Button icon="home" title="Go home" slot="startContent"></Button>
-      <Label>Subheader Title</Label>
       <Button
-        icon="action-settings"
-        title="Go to settings"
-        slot="endContent"
+        icon="home"
+        title="Go home"
+        slot="startContent"
+        onClick={handleClick}
       ></Button>
+      <Label>{APP_TITLE}</Label>
     </Bar>
   );
 }
