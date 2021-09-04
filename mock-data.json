@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "question": "Which one of the following is NOT a debugging strategy for client-side scripts?",
+    "options": [
+      {
+        "id": 1,
+        "value": "g_form.addInfoMessage()"
+      },
+      {
+        "id": 2,
+        "value": "Field Watcher"
+      },
+      {
+        "id": 3,
+        "value": "jslog"
+      },
+      {
+        "id": 4,
+        "value": "gs.log"
+      }
+    ],
+    "answers": null
+  },
+  {
+    "id": 2,
+    "question": "Which one of the following is NOT a debugging strategy for client-side scripts?",
+    "options": [
+      {
+        "id": 1,
+        "value": "g_form.addInfoMessage()"
+      },
+      {
+        "id": 2,
+        "value": "Field Watcher"
+      },
+      {
+        "id": 3,
+        "value": "jslog"
+      },
+      {
+        "id": 4,
+        "value": "gs.log"
+      }
+    ],
+    "answers": null
+  },
+  {
+    "id": 3,
+    "question": "Which one of the following is NOT a debugging strategy for client-side scripts?",
+    "options": [
+      {
+        "id": 1,
+        "value": "g_form.addInfoMessage()"
+      },
+      {
+        "id": 2,
+        "value": "Field Watcher"
+      },
+      {
+        "id": 3,
+        "value": "jslog"
+      },
+      {
+        "id": 4,
+        "value": "gs.log"
+      }
+    ],
+    "answers": null
+  },
+  {
+    "id": 4,
+    "question": "Which one of the following is NOT a debugging strategy for client-side scripts?",
+    "options": [
+      {
+        "id": 1,
+        "value": "g_form.addInfoMessage()"
+      },
+      {
+        "id": 2,
+        "value": "Field Watcher"
+      },
+      {
+        "id": 3,
+        "value": "jslog"
+      },
+      {
+        "id": 4,
+        "value": "gs.log"
+      }
+    ],
+    "answers": null
+  }
+]
