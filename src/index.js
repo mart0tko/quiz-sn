@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import "@ui5/webcomponents-icons/dist/AllIcons.js";
 import "@ui5/webcomponents/dist/Assets";
 import "@ui5/webcomponents-fiori/dist/Assets"; // only if you are using the ShellBar, Product Switch or the Upload Collection
 import reportWebVitals from './reportWebVitals';

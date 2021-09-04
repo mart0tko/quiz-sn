@@ -1,9 +1,7 @@
 import React from "react";
-import "@ui5/webcomponents-icons/dist/AllIcons.js";
-import { Button, Bar, Label } from "@ui5/webcomponents-react";
-import "./Header.scss";
-import { APP_TITLE } from "../../constants";
+import { Button, Bar, Label, Switch } from "@ui5/webcomponents-react";
 import { useHistory } from "react-router-dom";
+import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
 
 export default function App() {
   const history = useHistory();
@@ -12,15 +10,22 @@ export default function App() {
     history.push("/");
   };
 
+  const hangleThemeChange = (oEvent) => {
+    const bChecked = oEvent.target.checked;
+    bChecked ? setTheme("sap_fiori_3") : setTheme("sap_fiori_3_dark");
+   }
+
   return (
-    <Bar className="sn-header" design="Header" slot="header">
+    <Bar design="Header" slot="header">
       <Button
         icon="home"
         title="Go home"
         slot="startContent"
         onClick={handleClick}
       ></Button>
-      <Label>{APP_TITLE}</Label>
+      <Label>Service Now Quiz</Label>
+      <Label slot="endContent">Theme: </Label>
+      <Switch slot="endContent" onChange={hangleThemeChange}></Switch>
     </Bar>
   );
 }
