@@ -1,7 +1,7 @@
 {
   "name": "quiz-sn",
   "version": "0.1.0",
-  "homepage": "https://mart0tko.github.io/quiz-sn/",
+  "homepage": "http://mart0tko.github.io/quiz-sn/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
