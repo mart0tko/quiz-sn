@@ -1,14 +1,18 @@
 .tree-column-layout {
   display: flex;
   flex: 1;
-  height: 100%;
 
   &__column {
     display: flex;
+    justify-content: center;
   }
 
   &--flex-1 {
     flex: 1;
+
+    @media screen and (max-width: 800px) {
+      flex: 0;
+    }
   }
 
   &--flex-2 {

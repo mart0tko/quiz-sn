@@ -6,14 +6,14 @@ import { APP_TITLE } from "../../constants";
 import { useHistory } from "react-router-dom";
 
 export default function App() {
-  let history = useHistory();
+  const history = useHistory();
 
   const handleClick = () => {
     history.push("/");
   };
 
   return (
-    <Bar className="sn-header" design="Subheader">
+    <Bar className="sn-header" design="Header" slot="header">
       <Button
         icon="home"
         title="Go home"

@@ -1,0 +1,24 @@
+.quiz {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+
+  &__timer {
+    display: flex;
+    padding-top: 1rem;
+  }
+
+  &__questions {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  &__submit {
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: center;
+  }
+}

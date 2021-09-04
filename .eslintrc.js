@@ -15,6 +15,8 @@ module.exports = {
   rules: {
     "no-extra-semi":"error",
     "no-debugger": 1,
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "no-unreachable": "off"
   }
 };
