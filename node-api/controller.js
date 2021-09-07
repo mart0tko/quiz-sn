@@ -1,7 +1,7 @@
 var config = require("./dbconfig");
 const sql = require("mssql");
 const fs = require("fs");
-var rawdata = fs.readFileSync("./query/queries.json");
+var rawdata = fs.readFileSync("./queries.json");
 var queries = JSON.parse(rawdata);
 
 // DB connection
@@ -61,6 +61,5 @@ async function getQuizQuestions(req, res) {
 // }
 
 module.exports = {
-  getQuizQuestions,
-  test
+  getQuizQuestions
 };
