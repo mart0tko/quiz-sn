@@ -17,6 +17,12 @@ module.exports = {
     "no-debugger": 1,
     "react/prop-types": "off",
     "no-unused-vars": "off",
-    "no-unreachable": "off"
-  }
+    "no-unreachable": "off",
+    "no-undef": "off"
+  },
+  overrides: [{
+    "files": [ "./node-api" ],
+    "rules": {
+    }
+  }]
 };
