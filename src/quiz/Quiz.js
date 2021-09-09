@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Quiz.scss";
-import { Question, Timer } from "components";
+import { Question, RadioButtonQuiz, Timer } from "components";
 import { QuizService } from "services";
 import { Button } from "@ui5/webcomponents-react";
 
@@ -33,6 +33,10 @@ export default function Quiz() {
         {questions.length &&
           questions.map((question, i) => (
             <Question key={question.id} data={question} />
+          ))}
+        {questions.length &&
+          questions.map((question, i) => (
+            <RadioButtonQuiz key={question.id} data={question}/>
           ))}
       </div>
       <br />

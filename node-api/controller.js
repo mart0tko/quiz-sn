@@ -3,25 +3,17 @@ const sql = require("mssql");
 const fs = require("fs");
 var rawdata = fs.readFileSync("./queries.json");
 var queries = JSON.parse(rawdata);
-
-// DB connection
-// TODO Think how to make it once
-// const pool = sql
-//   .connect(config)
-//   .then((pool) => {
-//     console.log("Connected to MSSQL");
-//     return pool;
-//   })
-//   .catch(() => {
-//     (err) => console.log("Database Connection Failed! Bad Config: ", err);
-//   });
+const pool = new sql.ConnectionPool(config);
 
 // TODO adapt
-async function getQuizQuestions(req, res) {
+async function getQuiz(req, res) {
+  await poolConnect;
   try {
-    let pool = await sql.connect(config);
+    // This way you will get the quiz ID from the FE
+    // req.params.id
+
     let results = await pool.request().query(queries.getAllQuizQuestions);
-    res.status(200).json(results);
+    res.status(200);
   } catch (error) {
     res.status(500);
     res.send(error.message);
@@ -59,7 +51,8 @@ async function getQuizQuestions(req, res) {
 //     console.log(err);
 //   }
 // }
+// sql.on("error", (err) => console.log(err));
 
 module.exports = {
-  getQuizQuestions
+  getQuiz,
 };

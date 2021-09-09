@@ -1,14 +1,11 @@
-const  config = {
-  user:  'foo', // sql user
-  password:  'foo', //sql user password
-  server:  '127.0.0.1', // if it does not work try- localhost
-  database:  'Quiz',
+const config = {
+  user: "sql11435754",
+  password: "P86CYg5SBm",
+  server: "sql11.freesqldatabase.com",
+  database: "sql11435754",
   options: {
-    trustedconnection:  true,
-    enableArithAbort: true,
-    instancename:  'SQLEXPRESS'  // SQL Server instance name
-  },
-  port:  55892
-}
+    enableArithAbort: true
+  }
+};
 
 module.exports = config;

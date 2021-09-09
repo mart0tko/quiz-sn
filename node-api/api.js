@@ -1,16 +1,15 @@
 const express = require("express");
 // Sample model
 // var Order = require("./Order");
-var bodyParser = require("body-parser");
 var cors = require("cors");
 const app = express();
 const router = require("./router");
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 // parse application/json
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use(cors());
 
